@@ -8,6 +8,9 @@ import Overwhelm from "./components/journals/Overwhelm";
 import Planning from "./components/journals/Planning";
 import Reflection from "./components/journals/Reflection";
 import Venting from "./components/journals/Venting";
+import Sounds from "./components/Sounds";
+import BrainHealth from "./components/BrainHealth";
+import Account from "./components/Account";
 import "./index.css";
 import Home from "./Home";
 
@@ -23,6 +26,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="journal/gratitude" element={<Gratitude />} />
           <Route path="journal/overwhelm" element={<Overwhelm />} />
           <Route path="journal/venting" element={<Venting />} />
+          <Route path="sounds" element={<Sounds />} />
+          <Route path="brain-health" element={<BrainHealth />} />
+          <Route path="account" element={<Account />} />
+          <Route path="*" element={<h1>wrong path</h1>} />
         </Route>
       </Routes>
     </BrowserRouter>
